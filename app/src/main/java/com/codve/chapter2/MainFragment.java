@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 public class MainFragment extends Fragment {
 
     private Button mViewPhotoButton; // 浏览图片按钮
+    private Button mDrawButton; // 绘制自定义视图
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,11 @@ public class MainFragment extends Fragment {
         mViewPhotoButton = view.findViewById(R.id.photo_view_button);
         mViewPhotoButton.setOnClickListener((view1) -> {
             startActivity(ViewPhotoActivity.newIntent(getActivity()));
+        });
+
+        mDrawButton = view.findViewById(R.id.custom_view);
+        mDrawButton.setOnClickListener(view1 -> {
+            startActivity(CustomActivity.newIntent(getActivity()));
         });
         return view;
     }

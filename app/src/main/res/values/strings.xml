@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">chapter2</string>
+    <string name="app_name">cookbook</string>
     <string name="view_photo">browse photo</string>
+    <string name="no_img_found">no image found.</string>
+    <string name="draw_ball">draw a ball</string>
 </resources>

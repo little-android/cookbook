@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">烹饪指南</string>
+    <string name="view_photo">浏览图片</string>
+    <string name="no_img_found">找不到图片</string>
+    <string name="draw_ball">绘制圆球</string>
+</resources>

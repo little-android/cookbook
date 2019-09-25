@@ -4,7 +4,6 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import androidx.fragment.app.Fragment;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ViewPhotoFragment extends Fragment {
@@ -68,7 +66,7 @@ public class ViewPhotoFragment extends Fragment {
 
     private void updateImg() {
         if (mImgs.size() == 0) {
-            throwMessage(new Exception("No Image found."));
+            throwMessage(new Exception(getString(R.string.no_img_found)));
             return;
         }
         try {

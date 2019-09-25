@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewPhotoActivity"></activity>
+        <activity android:name=".CustomActivity"></activity>
         <receiver android:name=".ChargerReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
