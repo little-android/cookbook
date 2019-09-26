@@ -3,4 +3,6 @@
     <string name="view_photo">browse photo</string>
     <string name="no_img_found">no image found.</string>
     <string name="draw_ball">draw a ball</string>
+    <string name="edit_text">edit text</string>
+    <string name="text_edit_hint">input some text</string>
 </resources>

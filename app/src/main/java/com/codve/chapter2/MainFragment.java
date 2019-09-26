@@ -1,5 +1,6 @@
 package com.codve.chapter2;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ public class MainFragment extends Fragment {
 
     private Button mViewPhotoButton; // 浏览图片按钮
     private Button mDrawButton; // 绘制自定义视图
+    private Button mTextEditButton; // 编辑文本按钮
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,15 +26,21 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        mViewPhotoButton = view.findViewById(R.id.photo_view_button);
+        Activity activity = getActivity();
+        mViewPhotoButton = (Button) view.findViewById(R.id.photo_view_button);
         mViewPhotoButton.setOnClickListener((view1) -> {
-            startActivity(ViewPhotoActivity.newIntent(getActivity()));
+            startActivity(ViewPhotoActivity.newIntent(activity));
         });
 
-        mDrawButton = view.findViewById(R.id.custom_view);
+        mDrawButton = (Button) view.findViewById(R.id.custom_view);
         mDrawButton.setOnClickListener(view1 -> {
-            startActivity(CustomActivity.newIntent(getActivity()));
+            startActivity(CustomActivity.newIntent(activity));
         });
+
+        mTextEditButton = (Button) view.findViewById(R.id.text_edit_button);
+        mTextEditButton.setOnClickListener((view1 -> {
+            startActivity(TextViewActivity.newInstance(activity));
+        }));
         return view;
     }
 }
