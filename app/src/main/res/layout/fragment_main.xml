@@ -35,4 +35,10 @@
         android:id="@+id/custom_ripple"
         android:text="@string/ripple_button"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shape_button"
+        android:text="@string/shape_button_title"/>
+
 </LinearLayout>

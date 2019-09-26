@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,7 @@ public class MainFragment extends Fragment {
     private Button mDrawButton; // 绘制自定义视图
     private Button mTextEditButton; // 编辑文本按钮
     private Button mRippleButton; // 水印测试按钮
+    private Button mShapeButton; // 性状按钮
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,10 @@ public class MainFragment extends Fragment {
             startActivity(RippleActivity.newIntent(activity));
         }));
 
+        mShapeButton = (Button) view.findViewById(R.id.shape_button);
+        mShapeButton.setOnClickListener((view1 -> {
+            startActivity(ShapeActivity.newIntent(activity));
+        }));
         return view;
     }
 }

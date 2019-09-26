@@ -11,7 +11,8 @@ android cookbook
     
     4. 自定义按钮
         (1) 使用normal, pressed两种状态的按钮(two_states_button.xml)
-        (2) 使用系统自带波纹的按钮
-        (3) 使用自定义波纹的按钮
-        (4) 使用 normal 状态 + 自带波纹的按钮, 效果最好
+        (2) 使用 SDK 自带波纹的按钮(如给 textView 添加按下效果,
+         android:background="?attr/selectableItemBackground")
+        (3) 使用自定义波纹的按钮 (custom_ripple.xml)
+        (4) 使用 normal 状态 + 自带波纹的按钮(ripple_button.xml), 效果最好
     相关代码在
