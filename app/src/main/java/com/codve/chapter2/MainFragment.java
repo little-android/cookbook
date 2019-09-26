@@ -17,6 +17,7 @@ public class MainFragment extends Fragment {
     private Button mViewPhotoButton; // 浏览图片按钮
     private Button mDrawButton; // 绘制自定义视图
     private Button mTextEditButton; // 编辑文本按钮
+    private Button mRippleButton; // 水印测试按钮
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +40,14 @@ public class MainFragment extends Fragment {
 
         mTextEditButton = (Button) view.findViewById(R.id.text_edit_button);
         mTextEditButton.setOnClickListener((view1 -> {
-            startActivity(TextViewActivity.newInstance(activity));
+            startActivity(TextViewActivity.newIntent(activity));
         }));
+
+        mRippleButton = (Button) view.findViewById(R.id.custom_ripple);
+        mRippleButton.setOnClickListener((view1 -> {
+            startActivity(RippleActivity.newIntent(activity));
+        }));
+
         return view;
     }
 }

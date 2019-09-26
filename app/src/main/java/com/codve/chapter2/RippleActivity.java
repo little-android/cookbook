@@ -5,14 +5,13 @@ import android.content.Intent;
 
 import androidx.fragment.app.Fragment;
 
-public class TextViewActivity extends SingleFragmentActivity {
+public class RippleActivity extends SingleFragmentActivity {
 
     public static Intent newIntent(Context context) {
-        return new Intent(context, TextViewActivity.class);
+        return new Intent(context, RippleActivity.class);
     }
-
     @Override
     protected Fragment createFragment() {
-        return new TextViewFragment();
+        return new RippleFragment();
     }
 }

@@ -19,6 +19,7 @@
         <activity android:name=".ViewPhotoActivity"></activity>
         <activity android:name=".CustomActivity"></activity>
         <activity android:name=".TextViewActivity"></activity>
+        <activity android:name=".RippleActivity"></activity>
         <receiver android:name=".ChargerReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />

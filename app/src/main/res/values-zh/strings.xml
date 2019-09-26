@@ -5,4 +5,6 @@
     <string name="draw_ball">绘制圆球</string>
     <string name="text_edit_hint">请输入文本</string>
     <string name="edit_text">编辑文本</string>
+    <string name="ripple_button">波纹测试</string>
+    <string name="ripple_text">按钮波纹测试用例</string>
 </resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- 使用 SDK 的波纹 -->
+    <TextView
+        android:id="@+id/ripple_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/ripple_text"
+        android:textSize="18sp" />
+
+    <!--使用自定义的波纹 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_ripple"
+        android:text="@string/ripple_text"
+        android:textSize="18sp" />
+
+    <!-- 混合使用自定义的波纹加自定义的按钮 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/ripple_button"
+        android:text="@string/ripple_text"
+        android:textSize="18sp" />
+</LinearLayout>

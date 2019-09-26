@@ -5,4 +5,6 @@
     <string name="draw_ball">draw a ball</string>
     <string name="edit_text">edit text</string>
     <string name="text_edit_hint">input some text</string>
+    <string name="ripple_button">ripple test</string>
+    <string name="ripple_text"> ripple test example</string>
 </resources>
