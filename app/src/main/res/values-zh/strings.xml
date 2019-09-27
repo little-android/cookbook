@@ -16,4 +16,7 @@
     <string name="checkbox_apple">苹果</string>
     <string name="checkbox_orange">橙子</string>
     <string name="checkbox_banana">香蕉</string>
+    <string name="toggle_button_off_title">关灯</string>
+    <string name="toggle_button_on_title">开灯</string>
+    <string name="toggle_button_title">开关按钮测试</string>
 </resources>

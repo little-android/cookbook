@@ -16,4 +16,7 @@
     <string name="checkbox_apple">apple</string>
     <string name="checkbox_banana">banana</string>
     <string name="checkbox_orange">orange</string>
+    <string name="toggle_button_on_title">turn on the light</string>
+    <string name="toggle_button_off_title">turn off the light</string>
+    <string name="toggle_button_title">toggle button test</string>
 </resources>
