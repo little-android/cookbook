@@ -25,4 +25,5 @@
     <string name="view_switcher_second">这是第二个组件</string>
     <string name="view_switcher_button">下一页</string>
     <string name="view_switcher_title">ViewSwitcher 测试</string>
+    <string name="img_switcher_title">ImageSwitcher 测试</string>
 </resources>

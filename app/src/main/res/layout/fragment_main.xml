@@ -71,4 +71,10 @@
         android:layout_height="wrap_content"
         android:text="@string/view_switcher_title"/>
 
+    <Button
+        android:id="@+id/image_switcher_test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/img_switcher_title"/>
+
 </LinearLayout>

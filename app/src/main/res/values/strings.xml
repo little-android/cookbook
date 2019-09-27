@@ -25,4 +25,5 @@
     <string name="view_switcher_second">This is the second view</string>
     <string name="view_switcher_title">Test switcher</string>
     <string name="view_switcher_button">Next</string>
+    <string name="img_switcher_title">Test image switcher</string>
 </resources>
