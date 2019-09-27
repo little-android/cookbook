@@ -18,3 +18,6 @@ android cookbook
     相关代码在
     
     5. 自定义 View, 绘制一个饼图, 代码在 CustomView 中
+    6. 使用单选框和复选框, 代码在 RadioButtonFragment 和 fragment_radio_
+    button.xml 中
+    7. 使用开关, 代码在 ToggleFragment 和 fragment_toggle中.
