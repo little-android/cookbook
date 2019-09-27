@@ -25,6 +25,7 @@ public class MainFragment extends Fragment {
     private Button mToggleButton; // 开关按钮测试
     private Button mFabButton; // FAB 按钮测试
     private Button mProgressButton; // 进度条测试
+    private Button mViewSwitcherButton; // View 切换测试
 
 
     @Override
@@ -80,6 +81,11 @@ public class MainFragment extends Fragment {
         mProgressButton = (Button) view.findViewById(R.id.progress_button);
         mProgressButton.setOnClickListener((view1 -> {
             startActivity(ProgressActivity.newIntent(activity));
+        }));
+
+        mViewSwitcherButton = (Button) view.findViewById(R.id.view_switcher_test_button);
+        mViewSwitcherButton.setOnClickListener((view1 -> {
+            startActivity(ViewSwitcherActivity.newIntent(activity));
         }));
 
         return view;

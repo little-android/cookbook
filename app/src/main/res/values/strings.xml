@@ -21,4 +21,8 @@
     <string name="toggle_button_title">toggle button test</string>
     <string name="fab_button_title">fab button test</string>
     <string name="progress_button_title">progress bar test</string>
+    <string name="view_switcher_first">This is the first view</string>
+    <string name="view_switcher_second">This is the second view</string>
+    <string name="view_switcher_title">Test switcher</string>
+    <string name="view_switcher_button">Next</string>
 </resources>

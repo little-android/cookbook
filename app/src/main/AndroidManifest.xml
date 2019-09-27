@@ -25,6 +25,7 @@
         <activity android:name=".ToggleActivity"/>
         <activity android:name=".FabActivity"/>
         <activity android:name=".ProgressActivity"/>
+        <activity android:name=".ViewSwitcherActivity" />
         <receiver android:name=".ChargerReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />

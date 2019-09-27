@@ -31,3 +31,5 @@ android cookbook
     
     10. 使用滑块 seekBar, 代码跟进度条放在一起的.
     
+    11. 使用 ViewSwitcher 切换视图,
+        <item name="android:textAllCaps">false</item>禁止按钮全部大写

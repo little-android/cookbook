@@ -65,4 +65,10 @@
         android:id="@+id/progress_button"
         android:text="@string/progress_button_title"/>
 
+    <Button
+        android:id="@+id/view_switcher_test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_switcher_title"/>
+
 </LinearLayout>
