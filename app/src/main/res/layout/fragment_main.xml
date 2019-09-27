@@ -41,4 +41,10 @@
         android:id="@+id/shape_button"
         android:text="@string/shape_button_title"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_button"
+        android:text="@string/radio_button_title"/>
+
 </LinearLayout>

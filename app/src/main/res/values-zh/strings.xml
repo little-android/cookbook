@@ -9,4 +9,7 @@
     <string name="ripple_text">按钮波纹测试用例</string>
     <string name="shape_button_title">绘制形状</string>
     <string name="word">绘制文本和图片</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_red">红色</string>
+    <string name="radio_button_title">单选框和复选框测试</string>
 </resources>

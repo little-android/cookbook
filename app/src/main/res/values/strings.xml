@@ -9,4 +9,7 @@
     <string name="ripple_text"> ripple test example</string>
     <string name="shape_button_title"> draw shapes</string>
     <string name="word">draw text and picture</string>
+    <string name="radio_button_title"> radio button and check box</string>
+    <string name="color_red">red</string>
+    <string name="color_blue">blue</string>
 </resources>
