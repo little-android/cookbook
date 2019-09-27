@@ -12,4 +12,8 @@
     <string name="color_blue">蓝色</string>
     <string name="color_red">红色</string>
     <string name="radio_button_title">单选框和复选框测试</string>
+    <string name="checkbox_title">选择你喜欢的水果</string>
+    <string name="checkbox_apple">苹果</string>
+    <string name="checkbox_orange">橙子</string>
+    <string name="checkbox_banana">香蕉</string>
 </resources>

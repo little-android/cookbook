@@ -12,4 +12,8 @@
     <string name="radio_button_title"> radio button and check box</string>
     <string name="color_red">red</string>
     <string name="color_blue">blue</string>
+    <string name="checkbox_title">Choose the fruits you like.</string>
+    <string name="checkbox_apple">apple</string>
+    <string name="checkbox_banana">banana</string>
+    <string name="checkbox_orange">orange</string>
 </resources>

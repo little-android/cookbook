@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- 定义一组单选按钮 -->
@@ -8,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center">
 
         <!-- 定义单选按钮, 红色为选中状态 -->
         <RadioButton
@@ -25,4 +28,47 @@
             android:text="@string/color_blue"/>
 
     </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text_view_fruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/checkbox_title"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 定义一组复选按钮 -->
+            <CheckBox
+                android:id="@+id/checkbox_apple"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_apple"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_banana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_banana"/>
+            <CheckBox
+                android:id="@+id/checkbox_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_orange"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
