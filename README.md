@@ -29,3 +29,5 @@ android cookbook
     9. 使用进度条, 以及自定义进度条, 代码 ProgressFragment 和 fragment_
     progress_bar 
     
+    10. 使用滑块 seekBar, 代码跟进度条放在一起的.
+    
