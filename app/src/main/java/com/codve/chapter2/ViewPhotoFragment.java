@@ -32,7 +32,7 @@ public class ViewPhotoFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mImgs = new ArrayList<>();
         mIndex = 0;
-        dir ="imgs";
+        dir = "imgs";
     }
 
     @Nullable

@@ -1,9 +1,6 @@
 package com.codve.chapter2;
 
 import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -59,11 +56,9 @@ public class ImageSwitcherFragment extends Fragment {
         mSwitcher.setFactory(() -> {
             ImageView imageView = new ImageView(getActivity());
             try {
-                InputStream in = mAssetManager.open(mImgs.get(mPosition));
-                Bitmap bitmap = BitmapFactory.decodeStream(in);
-                imageView.setImageBitmap(bitmap);
-            } catch (IOException e) {
-                e.printStackTrace();
+                imageView.setImageDrawable(getDrawable(mPosition));
+            } catch (Exception e) {
+
             }
             return imageView;
         });
@@ -71,16 +66,25 @@ public class ImageSwitcherFragment extends Fragment {
         mButton = (Button) view.findViewById(R.id.image_switcher_button);
         mButton.setOnClickListener((view1 -> {
             mPosition = (mPosition + 1) % mImgs.size();
-            InputStream in = null;
+
             try {
-                in = mAssetManager.open(mImgs.get(mPosition));
-            } catch (IOException e) {
-                e.printStackTrace();
+                mSwitcher.setImageDrawable(getDrawable(mPosition));
+            } catch (Exception e) {
+                Toast.makeText(getActivity(), R.string.no_img_found, Toast.LENGTH_SHORT).
+                        show();
             }
-            Bitmap bitmap = BitmapFactory.decodeStream(in);
-            Drawable drawable = new BitmapDrawable(getActivity().getResources(), bitmap);
-            mSwitcher.setImageDrawable(drawable);
         }));
         return view;
+    }
+
+    private Drawable getDrawable(int position) throws Exception {
+        if (mImgs.size() == 0) {
+            throw new Exception(getString(R.string.no_img_found));
+        }
+        String file = mImgs.get(position);
+        InputStream in = mAssetManager.open(file);
+        Drawable drawable = Drawable.createFromResourceStream(getActivity().getResources(),
+                null, in, file);
+        return drawable;
     }
 }
