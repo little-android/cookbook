@@ -19,7 +19,8 @@ public class MainFragment extends Fragment {
     private Button mDrawButton; // 绘制自定义视图
     private Button mTextEditButton; // 编辑文本按钮
     private Button mRippleButton; // 水印测试按钮
-    private Button mShapeButton; // 性状按钮
+    private Button mShapeButton; // 形状按钮
+    private Button mWordButton; // 绘制文字图片按钮
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
