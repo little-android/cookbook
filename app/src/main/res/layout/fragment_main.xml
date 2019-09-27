@@ -59,4 +59,10 @@
         android:id="@+id/fab_button"
         android:text="@string/fab_button_title"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_button"
+        android:text="@string/progress_button_title"/>
+
 </LinearLayout>

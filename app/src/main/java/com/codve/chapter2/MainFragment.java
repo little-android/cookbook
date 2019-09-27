@@ -24,6 +24,9 @@ public class MainFragment extends Fragment {
     private Button mRadioButton; // 单选框测试按钮
     private Button mToggleButton; // 开关按钮测试
     private Button mFabButton; // FAB 按钮测试
+    private Button mProgressButton; // 进度条测试
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +75,11 @@ public class MainFragment extends Fragment {
         mFabButton = (Button) view.findViewById(R.id.fab_button);
         mFabButton.setOnClickListener((view1 -> {
             startActivity(FabActivity.newIntent(activity));
+        }));
+
+        mProgressButton = (Button) view.findViewById(R.id.progress_button);
+        mProgressButton.setOnClickListener((view1 -> {
+            startActivity(ProgressActivity.newIntent(activity));
         }));
 
         return view;

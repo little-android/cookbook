@@ -20,4 +20,5 @@
     <string name="toggle_button_off_title">turn off the light</string>
     <string name="toggle_button_title">toggle button test</string>
     <string name="fab_button_title">fab button test</string>
+    <string name="progress_button_title">progress bar test</string>
 </resources>
