@@ -23,6 +23,7 @@ public class MainFragment extends Fragment {
     private Button mWordButton; // 绘制文字图片按钮
     private Button mRadioButton; // 单选框测试按钮
     private Button mToggleButton; // 开关按钮测试
+    private Button mFabButton; // FAB 按钮测试
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +67,11 @@ public class MainFragment extends Fragment {
         mToggleButton = (Button) view.findViewById(R.id.toggle_button);
         mToggleButton.setOnClickListener((view1 -> {
             startActivity(ToggleActivity.newIntent(activity));
+        }));
+
+        mFabButton = (Button) view.findViewById(R.id.fab_button);
+        mFabButton.setOnClickListener((view1 -> {
+            startActivity(FabActivity.newIntent(activity));
         }));
 
         return view;
