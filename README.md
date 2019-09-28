@@ -1,8 +1,6 @@
-# cookbook
+# android cookbook
 
-## android cookbook
-
-  1. 使用 `ManagerAsset` 获取图片列表, 然后打开图片. 并将图片转换为 `bitmap`, 显示在 `imageView` 中, 相关  
+  1. 使用 `ManagerAsset` 获取图片列表, 然后打开图片. 并将图片转换为 `bitmap`, 显示在 `imageView` 中, 相关
   代码在 `ViewPhotoActivity` 当中.
 
   2. 使用自定义的 `View`, 手指按下绘制圆形. 相关代码在 `BallView` 中.
